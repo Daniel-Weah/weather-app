@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s ease-out;
+
+}
+#location-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #555;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s ease-out;
+}
+
+#search-btn:hover {
+    background: #0056b3;
+}
+#location-btn:hover {
+    background: #1e1e1e;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+.loader {
+  
+        --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-top: 3pc;
+    margin-left: auto;
+    margin-right: auto;
+    color: #25b09b;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: l27 1s infinite steps(8);
+  }
+  @keyframes l27 {
+    100% {transform: rotate(1turn)}
+  }
+
+#error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
